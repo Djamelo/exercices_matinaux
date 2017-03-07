@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+
+
+<body>
+	
+	<div id="couleur">
+	</div>
+
+<script type="text/javascript"> 
+
+// $supprimer=document.getElementById("supprimer");
+
+var tabImg = [
+"http://www.casacenina.fr/catalog/images/img_192/rico-7004-1305.jpg"
+,"http://p0.storage.canalblog.com/01/22/456071/69197689_p.gif"
+,"http://www.ceradel.fr/6578-thickbox_default/fond-couleur-orange-dim33x23cm.jpg"
+,"https://galerie.alittlemercerie.com/galerie/sell/629385/deco-tissu-thermocollant-jaune-fluo-1158809-jaune-fluo-535fd_big.jpg"]
+
+
+couleur = document.getElementById('couleur');
+
+for (i=0;i<tabImg.length; i++)
+	{
+		couleur.innerHTML += "<img src="+tabImg[i]+">";
+	};
+
+
+
+	function supprimer() {
+		tabImg.pop();
+		alert(tabImg);
+		//réeaffiche ton tableau 
+	}
+
+//$supprimer.onclick=supprimer;
+
+</script>
+<input type="button" value="Supprimer !" onclick="supprimer()">
+
+</body>
+</html>
+
